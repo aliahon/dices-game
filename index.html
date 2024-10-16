@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 Meters Dice Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>100 Meters Dice Game</h1>
+    <div class="game-container">
+      <!-- Player 1 Section -->
+      <div class="player" id="player1">
+        <h2>Player 1</h2>
+        <div id="player1-group1" class="dice-group">
+          <img src="images/dice1.png" alt="Dice 1" />
+          <img src="images/dice1.png" alt="Dice 2" />
+          <img src="images/dice1.png" alt="Dice 3" />
+          <img src="images/dice1.png" alt="Dice 4" />
+        </div>
+        <button onclick="rollDiceGroup(1, 1)">Roll Group 1</button>
+        <button id="conserve1-player1" onclick="conserveGroup(1, 1)" disabled>
+          Conserve Group 1
+        </button>
+
+        <div id="player1-group2" class="dice-group">
+          <img src="images/dice1.png" alt="Dice 1" />
+          <img src="images/dice1.png" alt="Dice 2" />
+          <img src="images/dice1.png" alt="Dice 3" />
+          <img src="images/dice1.png" alt="Dice 4" />
+        </div>
+        <button onclick="rollDiceGroup(2, 1)">Roll Group 2</button>
+        <button id="conserve2-player1" onclick="conserveGroup(2, 1)" disabled>
+          Conserve Group 2
+        </button>
+
+        <p>Score: <span id="score-player1">0</span></p>
+      </div>
+
+      <!-- Player 2 Section -->
+      <div class="player" id="player2">
+        <h2>Player 2</h2>
+        <div id="player2-group1" class="dice-group">
+          <img src="images/dice1.png" alt="Dice 1" />
+          <img src="images/dice1.png" alt="Dice 2" />
+          <img src="images/dice1.png" alt="Dice 3" />
+          <img src="images/dice1.png" alt="Dice 4" />
+        </div>
+        <button onclick="rollDiceGroup(1, 2)">Roll Group 1</button>
+        <button id="conserve1-player2" onclick="conserveGroup(1, 2)" disabled>
+          Conserve Group 1
+        </button>
+
+        <div id="player2-group2" class="dice-group">
+          <img src="images/dice1.png" alt="Dice 1" />
+          <img src="images/dice1.png" alt="Dice 2" />
+          <img src="images/dice1.png" alt="Dice 3" />
+          <img src="images/dice1.png" alt="Dice 4" />
+        </div>
+        <button onclick="rollDiceGroup(2, 2)">Roll Group 2</button>
+        <button id="conserve2-player2" onclick="conserveGroup(2, 2)" disabled>
+          Conserve Group 2
+        </button>
+
+        <p>Score: <span id="score-player2">0</span></p>
+      </div>
+    </div>
+
+    <p>Remaining Rolls: <span id="remaining-rolls">7</span></p>
+    <p id="player-turn">Current Player: 1</p>
+
+    <div id="final-result" class="final-result">
+      <!-- The result will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

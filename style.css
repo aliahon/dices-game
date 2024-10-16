@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.player {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+}
+
+.dice-group {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.dice-group img {
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+h2 {
+    color: #333;
+}
+.final-result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
